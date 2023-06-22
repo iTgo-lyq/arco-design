@@ -86,6 +86,7 @@ export { default as InputNumber } from './InputNumber';
 
 export type { LayoutProps, HeaderProps, FooterProps, SiderProps, ContentProps } from './Layout/interface';
 export { default as Layout } from './Layout';
+export { default as HandlessLayout } from './HandlessLayout';
 
 export type { LinkProps } from './Link/interface';
 export { default as Link } from './Link';

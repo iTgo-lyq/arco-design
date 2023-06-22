@@ -63,7 +63,7 @@ function Tabs(baseProps: TabsProps, ref) {
   const { getPrefixCls, size: ctxSize, componentConfig, rtl } = useContext(ConfigContext);
   const props = useMergeProps<TabsProps>(baseProps, defaultProps, componentConfig?.Tabs);
 
-  const paneChildren = getPaneChildren(props);
+  const paneChildren = props.forceRenderPanes ? (props.children as any) : getPaneChildren(props);
 
   const tabsRef = useRef<HTMLDivElement>();
 

@@ -157,4 +157,4 @@ DropdownComponent.Button = Button;
 
 export default DropdownComponent;
 
-export { DropdownProps };
+// export { DropdownProps };

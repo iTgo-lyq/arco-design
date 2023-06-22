@@ -187,6 +187,45 @@ function generateIcon(cjs) {
         );
       }
     );
+
+    nunjucks.render(
+      './handless-icon.template.nunjucks',
+      {
+        svg,
+        iconName,
+        iconClassName,
+      },
+      (err, res) => {
+        if (err) return;
+        const code = babel.transform(res, cjs ? babelConfigCjs : babelConfig).code;
+        fs.outputFile(
+          `../${cjs ? 'react-handless-icon-cjs' : 'react-handless-icon'}/${iconName}/index.d.ts`,
+          `import { CSSProperties, SVGAttributes, ForwardRefExoticComponent, RefAttributes } from 'react';
+
+interface IconProps extends SVGAttributes<SVGElement> {
+  style?: CSSProperties;
+  spin?: boolean;
+}
+
+const ${iconName}: ForwardRefExoticComponent<IconProps & RefAttributes<unknown>>;
+
+export default ${iconName};
+`
+        );
+        fs.outputFile(
+          `../${cjs ? 'react-handless-icon-cjs' : 'react-handless-icon'}/${iconName}/index.js`,
+          code,
+          (err) => {
+            if (!err) {
+              length += 1;
+              if (length === totalLength) {
+                console.log(`\nGenerate icon success! Total: ${totalLength}\n`); // eslint-disable-line
+              }
+            }
+          }
+        );
+      }
+    );
   }
 }
 

@@ -67,6 +67,8 @@ site/package-lock.json
 storybook-static/
 icon/react-icon/
 icon/react-icon-cjs/
+icon/react-handless-icon/
+icon/react-handless-icon-cjs/
 dist/
 
 # typescript cache

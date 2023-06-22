@@ -1,4 +1,10 @@
-import React, { PureComponent, ReactElement, PropsWithChildren, CSSProperties } from 'react';
+import React, {
+  PureComponent,
+  ReactElement,
+  PropsWithChildren,
+  CSSProperties,
+  JSXElementConstructor,
+} from 'react';
 import { findDOMNode } from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
 import ResizeObserverPolyfill from 'resize-observer-polyfill';
@@ -963,7 +969,7 @@ class Trigger extends PureComponent<TriggerProps, TriggerState> {
     }
 
     const child: any = this.getChild();
-    const popupChildren: any = React.Children.only(popup());
+    const popupChildren: any = React.Children.only(typeof popup === 'function' ? popup() : popup);
 
     if (child.props.className) {
       mergeProps.className = child.props.className;
@@ -1118,4 +1124,4 @@ class Trigger extends PureComponent<TriggerProps, TriggerState> {
   }
 }
 
-export default Trigger;
+export default Trigger as unknown as JSXElementConstructor<TriggerProps>;

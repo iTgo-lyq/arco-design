@@ -270,6 +270,7 @@ export { default as IconSubscribed } from './react-icon/IconSubscribed/index';
 export { default as IconSun } from './react-icon/IconSun/index';
 export { default as IconTag } from './react-icon/IconTag/index';
 export { default as IconTags } from './react-icon/IconTags/index';
+export { default as IconTheShoppingCart } from './react-icon/IconTheShoppingCart/index';
 export { default as IconThunderbolt } from './react-icon/IconThunderbolt/index';
 export { default as IconTool } from './react-icon/IconTool/index';
 export { default as IconTrophy } from './react-icon/IconTrophy/index';

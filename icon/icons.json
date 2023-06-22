@@ -627,6 +627,9 @@
       ],
       "outline": [
         {
+          "componentName": "IconTheShoppingCart"
+        },
+        {
           "componentName": "IconApps"
         },
         {

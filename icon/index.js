@@ -1481,6 +1481,12 @@ Object.defineProperty(exports, 'IconTags', {
     return _index272.default;
   },
 });
+Object.defineProperty(exports, 'IconTheShoppingCart', {
+  enumerable: true,
+  get: function get() {
+    return _index273.default;
+  },
+});
 Object.defineProperty(exports, 'IconThumbDown', {
   enumerable: true,
   get: function get() {
@@ -1508,7 +1514,7 @@ Object.defineProperty(exports, 'IconThumbUpFill', {
 Object.defineProperty(exports, 'IconThunderbolt', {
   enumerable: true,
   get: function get() {
-    return _index273.default;
+    return _index274.default;
   },
 });
 Object.defineProperty(exports, 'IconTiktokColor', {
@@ -1544,7 +1550,7 @@ Object.defineProperty(exports, 'IconToTop', {
 Object.defineProperty(exports, 'IconTool', {
   enumerable: true,
   get: function get() {
-    return _index274.default;
+    return _index275.default;
   },
 });
 Object.defineProperty(exports, 'IconTranslate', {
@@ -1556,7 +1562,7 @@ Object.defineProperty(exports, 'IconTranslate', {
 Object.defineProperty(exports, 'IconTrophy', {
   enumerable: true,
   get: function get() {
-    return _index275.default;
+    return _index276.default;
   },
 });
 Object.defineProperty(exports, 'IconTwitter', {
@@ -1586,7 +1592,7 @@ Object.defineProperty(exports, 'IconUndo', {
 Object.defineProperty(exports, 'IconUnlock', {
   enumerable: true,
   get: function get() {
-    return _index276.default;
+    return _index277.default;
   },
 });
 Object.defineProperty(exports, 'IconUnorderedList', {
@@ -1616,25 +1622,25 @@ Object.defineProperty(exports, 'IconUpload', {
 Object.defineProperty(exports, 'IconUser', {
   enumerable: true,
   get: function get() {
-    return _index279.default;
+    return _index280.default;
   },
 });
 Object.defineProperty(exports, 'IconUserAdd', {
   enumerable: true,
   get: function get() {
-    return _index277.default;
+    return _index278.default;
   },
 });
 Object.defineProperty(exports, 'IconUserGroup', {
   enumerable: true,
   get: function get() {
-    return _index278.default;
+    return _index279.default;
   },
 });
 Object.defineProperty(exports, 'IconVideoCamera', {
   enumerable: true,
   get: function get() {
-    return _index280.default;
+    return _index281.default;
   },
 });
 Object.defineProperty(exports, 'IconVoice', {
@@ -1670,13 +1676,13 @@ Object.defineProperty(exports, 'IconWeiboCircleFill', {
 Object.defineProperty(exports, 'IconWifi', {
   enumerable: true,
   get: function get() {
-    return _index281.default;
+    return _index282.default;
   },
 });
 Object.defineProperty(exports, 'IconWoman', {
   enumerable: true,
   get: function get() {
-    return _index282.default;
+    return _index283.default;
   },
 });
 Object.defineProperty(exports, 'IconXiguaColor', {
@@ -2242,22 +2248,24 @@ var _index271 = _interopRequireDefault(require('./react-icon-cjs/IconTag/index')
 
 var _index272 = _interopRequireDefault(require('./react-icon-cjs/IconTags/index'));
 
-var _index273 = _interopRequireDefault(require('./react-icon-cjs/IconThunderbolt/index'));
+var _index273 = _interopRequireDefault(require('./react-icon-cjs/IconTheShoppingCart/index'));
 
-var _index274 = _interopRequireDefault(require('./react-icon-cjs/IconTool/index'));
+var _index274 = _interopRequireDefault(require('./react-icon-cjs/IconThunderbolt/index'));
 
-var _index275 = _interopRequireDefault(require('./react-icon-cjs/IconTrophy/index'));
+var _index275 = _interopRequireDefault(require('./react-icon-cjs/IconTool/index'));
 
-var _index276 = _interopRequireDefault(require('./react-icon-cjs/IconUnlock/index'));
+var _index276 = _interopRequireDefault(require('./react-icon-cjs/IconTrophy/index'));
 
-var _index277 = _interopRequireDefault(require('./react-icon-cjs/IconUserAdd/index'));
+var _index277 = _interopRequireDefault(require('./react-icon-cjs/IconUnlock/index'));
 
-var _index278 = _interopRequireDefault(require('./react-icon-cjs/IconUserGroup/index'));
+var _index278 = _interopRequireDefault(require('./react-icon-cjs/IconUserAdd/index'));
 
-var _index279 = _interopRequireDefault(require('./react-icon-cjs/IconUser/index'));
+var _index279 = _interopRequireDefault(require('./react-icon-cjs/IconUserGroup/index'));
 
-var _index280 = _interopRequireDefault(require('./react-icon-cjs/IconVideoCamera/index'));
+var _index280 = _interopRequireDefault(require('./react-icon-cjs/IconUser/index'));
 
-var _index281 = _interopRequireDefault(require('./react-icon-cjs/IconWifi/index'));
+var _index281 = _interopRequireDefault(require('./react-icon-cjs/IconVideoCamera/index'));
 
-var _index282 = _interopRequireDefault(require('./react-icon-cjs/IconWoman/index'));
+var _index282 = _interopRequireDefault(require('./react-icon-cjs/IconWifi/index'));
+
+var _index283 = _interopRequireDefault(require('./react-icon-cjs/IconWoman/index'));

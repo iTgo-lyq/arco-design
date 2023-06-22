@@ -119,7 +119,7 @@ export interface TriggerProps {
    * @zh 弹出框的内容
    * @en The content of the popup
    */
-  popup?: () => ReactNode;
+  popup?: JSX.Element | (() => ReactNode);
   /**
    * @zh 是否根据空间自动调整弹出框的位置
    * @en Whether to automatically adjust the position of the popup according to the viewport

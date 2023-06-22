@@ -132,6 +132,10 @@ export interface TabsProps {
    */
   scrollPosition?: 'start' | 'end' | 'center' | 'auto' | number;
   /**
+   *  强制渲染 tab-pane
+   */
+  forceRenderPanes?: boolean;
+  /**
    * @zh `activeTab` 改变的回调
    * @en Callback when `activeTab` changed
    */
