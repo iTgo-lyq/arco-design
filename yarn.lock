@@ -2878,7 +2878,7 @@
 
 "@types/react-dom@<18.0.0", "@types/react-dom@^18.2.5":
   version "18.2.5"
-  resolved "http://bnpm.byted.org/@types/react-dom/-/react-dom-18.2.5.tgz#5c5f13548bda23cd98f50ca4a59107238bfe18f3"
+  resolved "http://registry.npmjs.org/@types/react-dom/-/react-dom-18.2.5.tgz#5c5f13548bda23cd98f50ca4a59107238bfe18f3"
   integrity sha512-sRQsOS/sCLnpQhR4DSKGTtWFE3FZjpQa86KPVbhUqdYMRZ9FEFcfAytKhR/vUG2rH1oFbOOej6cuD7MFSobDRQ==
   dependencies:
     "@types/react" "*"
@@ -2899,7 +2899,7 @@
 
 "@types/react@*", "@types/react@18.2.12", "@types/react@^18.2.12":
   version "18.2.12"
-  resolved "http://bnpm.byted.org/@types/react/-/react-18.2.12.tgz#95d584338610b78bb9ba0415e3180fb03debdf97"
+  resolved "http://registry.npmjs.org/@types/react/-/react-18.2.12.tgz#95d584338610b78bb9ba0415e3180fb03debdf97"
   integrity sha512-ndmBMLCgn38v3SntMeoJaIrO6tGHYKMEBohCUmw8HoLLQdRMOIGXfeYaBTLe2lsFaSB3MOK1VXscYFnmLtTSmw==
   dependencies:
     "@types/prop-types" "*"
