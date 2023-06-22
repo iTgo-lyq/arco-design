@@ -704,6 +704,7 @@ function Select(baseProps: SelectProps, ref) {
   const renderView = (eleView: ReactElement | ReactNode) => {
     return (
       <Trigger
+        // @ts-ignore
         ref={(ref) => (refTrigger.current = ref)}
         popup={renderPopup}
         trigger={trigger}

@@ -103,6 +103,7 @@ function Dropdown(baseProps: DropdownProps, _) {
 
   return (
     <Trigger
+      // @ts-ignore
       ref={(ref) => (triggerRef.current = ref)}
       classNames="slideDynamicOrigin"
       childrenPrefix={prefixCls}
@@ -130,6 +131,7 @@ function Dropdown(baseProps: DropdownProps, _) {
       {React.isValidElement(children)
         ? React.cloneElement(children, {
             ...(typeof disabled === 'boolean' ? { disabled } : {}),
+            // @ts-ignore
             className: cs(
               {
                 [`${prefixCls}-popup-visible`]: popupVisible,
@@ -157,4 +159,4 @@ DropdownComponent.Button = Button;
 
 export default DropdownComponent;
 
-// export { DropdownProps };
+export type { DropdownProps };

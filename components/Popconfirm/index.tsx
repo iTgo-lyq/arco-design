@@ -177,6 +177,7 @@ function Popconfirm(baseProps: PropsWithChildren<PopconfirmProps>, ref) {
       trigger={trigger}
       escToClose={escToClose}
       popupVisible={popupVisible}
+      // @ts-ignore
       content={renderPopconfirmContent}
       unmountOnExit={unmountOnExit}
       blurToHide={blurToHide}

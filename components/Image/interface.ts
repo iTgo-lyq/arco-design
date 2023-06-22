@@ -212,6 +212,7 @@ export interface ImagePreviewGroupProps extends Omit<PartialImagePreviewProps, '
  * @zh `<Image.Preview>` 中类型 `ImagePreviewActionProps` 详细参数。
  * @en Detailed parameters of type `ImagePreviewActionProps` in `<Image.Preview>`.
  */
+// @ts-ignore
 export interface ImagePreviewActionProps extends HTMLAttributes<HTMLDivElement> {
   /**
    * @zh 唯一标识

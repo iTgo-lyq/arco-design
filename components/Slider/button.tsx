@@ -200,6 +200,7 @@ const SliderButton = function (props: SliderButtonProps) {
         top: 12,
         bottom: 12,
       }}
+      // @ts-ignore
       ref={tooltip}
       popup={() => renderTooltipContent(position)}
       popupVisible={popupVisible}

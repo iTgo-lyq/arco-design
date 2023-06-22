@@ -158,6 +158,7 @@ export interface GridProps extends Omit<HTMLAttributes<HTMLDivElement>, 'classNa
 /**
  * @title GridItem
  */
+// @ts-ignore
 export interface GridItemProps extends Omit<HTMLAttributes<HTMLDivElement>, 'className'> {
   style?: CSSProperties;
   className?: string | string[];

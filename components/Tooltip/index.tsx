@@ -58,6 +58,7 @@ function Tooltip(baseProps: PropsWithChildren<TooltipProps>, ref) {
     ...rest
   } = props;
 
+  // @ts-ignore
   const refTrigger = useRef<Trigger>();
 
   const updatePopupPosition = (delay = 0, callback?: () => void) => {

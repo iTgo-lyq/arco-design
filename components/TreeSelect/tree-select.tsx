@@ -63,6 +63,7 @@ const TreeSelect: ForwardRefRenderFunction<
     componentConfig?.TreeSelect
   );
   const refIsFirstRender = useIsFirstRender();
+  // @ts-ignore
   const triggerRef = useRef<Trigger>();
   const treeRef = useRef(null);
   const refSelectView = useRef(null);
@@ -279,6 +280,7 @@ const TreeSelect: ForwardRefRenderFunction<
       <Trigger
         autoAlignPopupWidth={false}
         autoAlignPopupMinWidth
+        // @ts-ignore
         ref={triggerRef}
         classNames="slideDynamicOrigin"
         trigger="click"

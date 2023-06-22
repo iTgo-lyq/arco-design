@@ -58,6 +58,7 @@ const List = <
           return false;
         }}
       >
+        {/*  @ts-ignore  */}
         {(_, store, { value: _value, onChange }) => {
           const value = _value || [];
 

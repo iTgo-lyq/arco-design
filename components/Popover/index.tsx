@@ -50,6 +50,7 @@ function Popover(baseProps: PropsWithChildren<PopoverProps>, ref) {
       getPopupContainer={getPopupContainer}
       position={position}
       trigger={trigger}
+      // @ts-ignore
       content={() => (
         <div className={cs(`${prefixCls}-inner`, { [`${prefixCls}-inner-rtl`]: rtl })}>
           {title ? (
