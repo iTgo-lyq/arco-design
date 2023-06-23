@@ -11,4 +11,6 @@ export const componentConfig = {
   Result: {},
   Space: {},
   Divider: {},
+  Skeleton: {},
+  Link: {},
 };
