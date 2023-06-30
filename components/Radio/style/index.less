@@ -290,6 +290,19 @@
 
 // dark mode
 
+@media (prefers-color-scheme: dark) {
+  @{arco-theme-tag}:not([arco-theme='light']) {
+    .@{radio-prefix-cls}-button.@{radio-prefix-cls}-checked,
+    .@{radio-prefix-cls}-button:not(.@{radio-prefix-cls}-disabled):hover {
+      background-color: @radio-button-color-bg_active_dark;
+    }
+
+    .@{radio-prefix-cls}-button::after {
+      background-color: @radio-group-button-color-bg_dark;
+    }
+  }
+}
+
 @{arco-theme-tag} {
   &[arco-theme='dark'] {
     .@{radio-prefix-cls}-button.@{radio-prefix-cls}-checked,

@@ -384,6 +384,37 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  @{arco-theme-tag}:not([arco-theme='light']) {
+    .@{carousel-prefix-cls}-arrow > div {
+      background-color: rgba(var(~'@{arco-cssvars-prefix}-gray-1'), 0.3);
+
+      &:hover {
+        background-color: rgba(var(~'@{arco-cssvars-prefix}-gray-1'), 0.5);
+      }
+    }
+
+    .@{carousel-prefix-cls}-indicator-item,
+    .@{carousel-prefix-cls}-indicator-slider {
+      background-color: rgba(var(~'@{arco-cssvars-prefix}-gray-1'), 0.3);
+    }
+
+    .@{carousel-prefix-cls}-indicator-item-active,
+    .@{carousel-prefix-cls}-indicator-item:hover {
+      background-color: @carousel-indicator-color_active;
+    }
+
+    .@{carousel-prefix-cls}-indicator-outer.@{carousel-prefix-cls}-indicator-slider {
+      background-color: @carousel-indicator-outer-color_default;
+    }
+
+    .@{carousel-prefix-cls}-indicator-outer .@{carousel-prefix-cls}-indicator-item:hover,
+    .@{carousel-prefix-cls}-indicator-outer .@{carousel-prefix-cls}-indicator-item-active {
+      background-color: @carousel-indicator-outer-color_active;
+    }
+  }
+}
+
 @{arco-theme-tag} {
   &[arco-theme='dark'] {
     .@{carousel-prefix-cls}-arrow > div {

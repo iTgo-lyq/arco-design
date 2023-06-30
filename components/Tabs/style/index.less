@@ -742,6 +742,22 @@
 @import './vertical.less';
 @import './rtl.less';
 
+@media (prefers-color-scheme: dark) {
+  @{arco-theme-tag}:not([arco-theme='light']) {
+    .@{tabs-prefix-cls}-header-nav-capsule {
+      .@{tabs-prefix-cls}-header-title {
+        &-active {
+          background-color: var(~'@{arco-cssvars-prefix}-color-fill-3');
+        }
+
+        &:not(&-disabled):hover {
+          background-color: var(~'@{arco-cssvars-prefix}-color-fill-3');
+        }
+      }
+    }
+  }
+}
+
 @{arco-theme-tag} {
   &[arco-theme='dark'] {
     .@{tabs-prefix-cls}-header-nav-capsule {
