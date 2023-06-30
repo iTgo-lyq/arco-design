@@ -63,18 +63,6 @@ function Tabs(baseProps: TabsProps, ref) {
   const { getPrefixCls, size: ctxSize, componentConfig, rtl } = useContext(ConfigContext);
   const props = useMergeProps<TabsProps>(baseProps, defaultProps, componentConfig?.Tabs);
 
-  const paneChildren = props.forceRenderPanes ? (props.children as any) : getPaneChildren(props);
-
-  const tabsRef = useRef<HTMLDivElement>();
-
-  const [activeTab, setActiveTab] = useMergeValue<string>(
-    (paneChildren[0] && paneChildren[0].key) as string,
-    {
-      defaultValue: 'defaultActiveTab' in props ? props.defaultActiveTab : undefined,
-      value: 'activeTab' in props ? props.activeTab : undefined,
-    }
-  );
-
   const prefixCls = getPrefixCls('tabs');
   const size =
     props.size || ((sizeList.indexOf(ctxSize) > -1 ? ctxSize : 'default') as TabsProps['size']);
@@ -88,12 +76,25 @@ function Tabs(baseProps: TabsProps, ref) {
     justify,
     destroyOnHide,
     lazyload,
+    forceRenderPanes,
     onChange,
     onClickTab,
     onDeleteTab,
     renderTabHeader,
     ...rest
   } = props;
+
+  const paneChildren = forceRenderPanes ? (props.children as any) : getPaneChildren(props);
+
+  const tabsRef = useRef<HTMLDivElement>();
+
+  const [activeTab, setActiveTab] = useMergeValue<string>(
+    (paneChildren[0] && paneChildren[0].key) as string,
+    {
+      defaultValue: 'defaultActiveTab' in props ? props.defaultActiveTab : undefined,
+      value: 'activeTab' in props ? props.activeTab : undefined,
+    }
+  );
 
   const idPrefix = useId(`${prefixCls}-`);
   const tabPosition = direction === 'vertical' ? 'left' : props.tabPosition;
