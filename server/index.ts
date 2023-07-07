@@ -1,6 +1,6 @@
 export { default as Button } from '../es/HandlessButton';
 import { default as Button } from '../es/HandlessButton';
-export const ButtonGroup = Button;
+export const ButtonGroup = Button.Group;
 export { default as Layout } from '../es/HandlessLayout';
 export { default as Badge } from '../es/HandlessBadge';
 export { default as Card } from '../es/HandlessCard';
@@ -10,6 +10,9 @@ export { default as Space } from '../es/HandlessSpace';
 export { default as Divider } from '../es/HandlessDivider';
 export { default as Skeleton } from '../es/HandlessSkeleton';
 export { default as Link } from '../es/HandlessLink';
+export { default as Steps } from '../es/HandlessSteps';
+import { default as Steps } from '../es/HandlessSteps';
+export const StepItem = Steps.Step;
 export { default as IconNotification } from '../icon/react-handless-icon/IconNotification';
 export { default as IconDesktop } from '../icon/react-handless-icon/IconDesktop';
 export { default as IconMoonFill } from '../icon/react-handless-icon/IconMoonFill';
@@ -32,3 +35,6 @@ export { default as IconLoading } from '../icon/react-handless-icon/IconLoading'
 export { default as IconRefresh } from '../icon/react-handless-icon/IconRefresh';
 export { default as IconSearch } from '../icon/react-handless-icon/IconSearch';
 export { default as IconSelectAll } from '../icon/react-handless-icon/IconSelectAll';
+export { default as IconExport } from '../icon/react-handless-icon/IconExport';
+export { default as IconImport } from '../icon/react-handless-icon/IconImport';
+export { default as IconSwap } from '../icon/react-handless-icon/IconSwap';

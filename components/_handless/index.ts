@@ -13,4 +13,5 @@ export const componentConfig = {
   Divider: {},
   Skeleton: {},
   Link: {},
+  Steps: {},
 };

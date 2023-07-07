@@ -131,6 +131,10 @@ export interface InputTagProps<T = any> {
    */
   tokenSeparators?: string[];
   /**
+   * 中间省略
+   */
+  middleEllipsis?: boolean;
+  /**
    * @zh 校验函数，默认在 按下enter时候触发。
    * @en Function to check user's input, which is triggered when `Enter` is pressed
    * @defaultValue (inputValue, values) => inputValue && values.every((item) => item !== inputValue)

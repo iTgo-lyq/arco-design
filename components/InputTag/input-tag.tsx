@@ -121,6 +121,7 @@ function InputTag(baseProps: InputTagProps<string | ObjectValueType>, ref) {
     addBefore,
     addAfter,
     tokenSeparators,
+    middleEllipsis,
     validate,
     renderTag,
     tagClassName,
@@ -238,9 +239,20 @@ function InputTag(baseProps: InputTagProps<string | ObjectValueType>, ref) {
       );
     }
 
+    const ellipsisStyle: any = {
+      margin: 0,
+      padding: 0,
+      textOverflow: 'ellipsis',
+      overflow: 'hidden',
+      whiteSpace: 'nowrap',
+    };
+
+    const text = fillNBSP(label);
+
     return (
       <Tag
         visible
+        style={{ display: 'flex' }}
         className={cs(`${prefixCls}-tag`, {
           [tagClassName]: tagClassName,
         })}
@@ -252,7 +264,34 @@ function InputTag(baseProps: InputTagProps<string | ObjectValueType>, ref) {
         title={typeof label === 'string' ? label : undefined}
         onClose={onClose}
       >
-        {fillNBSP(label)}
+        {middleEllipsis ? (
+          <span
+            style={{
+              display: 'flex',
+              ...ellipsisStyle,
+            }}
+          >
+            <span
+              style={{
+                flexShrink: 1,
+                float: 'right',
+                ...ellipsisStyle,
+              }}
+            >
+              {text.slice(0, -1 * Math.min(text.length / 5, 20))}
+            </span>
+            <span
+              style={{
+                flexShrink: 0,
+                ...ellipsisStyle,
+              }}
+            >
+              {text.slice(-1 * Math.min(text.length / 5, 20))}
+            </span>
+          </span>
+        ) : (
+          fillNBSP(label)
+        )}
       </Tag>
     );
   };
