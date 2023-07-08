@@ -45,3 +45,4 @@ export { default as SelectOption } from '../es/Select/option';
 export { default as Carousel } from '../es/Carousel';
 export { default as Card } from '../es/Card';
 export { default as Notification } from '../es/Notification';
+export { default as Spin } from '../es/Spin';
