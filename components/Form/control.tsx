@@ -417,7 +417,14 @@ export default class Control<
       childProps.error = true;
     }
 
-    return React.cloneElement(child, childProps);
+    return this.props.shadowInput ? (
+      <>
+        <input type="hidden" name={field as string} value={_value} />
+        {React.cloneElement(child, childProps)}
+      </>
+    ) : (
+      React.cloneElement(child, childProps)
+    );
   }
 
   getChild = () => {

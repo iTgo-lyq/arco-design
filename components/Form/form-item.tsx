@@ -175,7 +175,7 @@ const Item = <
     disabled: 'disabled' in props ? props.disabled : formContext.disabled,
   };
 
-  const { label, extra, className, style, validateStatus, hidden, ...rest } = props;
+  const { label, extra, className, style, validateStatus, hidden, shadowInput, ...rest } = props;
   const labelClassNames = cs(`${prefixCls}-label-item`, {
     [`${prefixCls}-label-item-left`]: labelAlign === 'left',
   });
@@ -226,6 +226,7 @@ const Item = <
           disabled={disabled}
           {...(props as any)}
           {...(field ? { key: field, _key: field } : {})}
+          shadowInput={shadowInput}
         >
           {(...rest) =>
             children(...(rest as Parameters<FormItemChildrenFn<FormData, FieldValue, FieldKey>>))
@@ -241,7 +242,7 @@ const Item = <
         return isObject(child) ? cloneElement(child as ReactElement, childProps) : child;
       });
       return (
-        <Control {...(props as any)} field={undefined}>
+        <Control {...(props as any)} field={undefined} shadowInput={shadowInput}>
           {childrenDom}
         </Control>
       );
@@ -250,7 +251,13 @@ const Item = <
       if (field) {
         const key = formListContext?.getItemKey?.(field) || field;
         return (
-          <Control disabled={disabled} {...(props as any)} key={key} _key={key}>
+          <Control
+            disabled={disabled}
+            {...(props as any)}
+            key={key}
+            _key={key}
+            shadowInput={shadowInput}
+          >
             {children}
           </Control>
         );
@@ -262,7 +269,7 @@ const Item = <
         }
         const childProps = isUndefined(disabled) ? {} : { disabled };
         return (
-          <Control {...(props as any)} field={undefined}>
+          <Control {...(props as any)} field={undefined} shadowInput={shadowInput}>
             {cloneElement(children as ReactElement, childProps)}
           </Control>
         );

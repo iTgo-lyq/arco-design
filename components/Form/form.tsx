@@ -57,6 +57,7 @@ const Form = <
   const props = useMergeProps<FormProps>(baseProps, defaultProps, ctx.componentConfig?.Form);
 
   const {
+    submit,
     layout,
     labelCol,
     wrapperCol,
@@ -183,6 +184,7 @@ const Form = <
           )}
           style={props.style}
           onSubmit={(e) => {
+            if (submit) return true;
             e.preventDefault();
             e.stopPropagation();
             formInstance.submit();

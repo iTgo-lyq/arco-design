@@ -22,6 +22,7 @@ export { default as Form } from '../es/Form';
 export { default as FormItem } from '../es/Form/form-item';
 export { default as FormList } from '../es/Form/form-list';
 export { default as useForm } from '../es/Form/useForm';
+export { default as useWatch } from '../es/Form/hooks/useWatch';
 export { default as useFormContext } from '../es/Form/hooks/useContext';
 export { default as Radio } from '../es/Radio';
 export { default as RadioGroup } from '../es/Radio/group';

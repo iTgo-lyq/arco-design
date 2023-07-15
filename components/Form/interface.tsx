@@ -32,6 +32,8 @@ export interface FormProps<
   FieldValue = FormData[keyof FormData],
   FieldKey extends KeyType = keyof FormData
 > extends Omit<FormHTMLAttributes<any>, 'className' | 'onChange' | 'onSubmit'> {
+  /** 直接提交 */
+  submit?: boolean;
   style?: CSSProperties;
   className?: string | string[];
   prefixCls?: string;
@@ -211,6 +213,7 @@ export interface FormItemProps<
   FieldValue = FormData[keyof FormData],
   FieldKey extends KeyType = keyof FormData
 > extends Omit<HTMLAttributes<any>, 'className' | 'children'> {
+  shadowInput?: FormControlProps['shadowInput'];
   style?: CSSProperties;
   className?: string | string[];
   prefixCls?: string;
@@ -397,6 +400,8 @@ export interface FormControlProps<
   FieldValue = FormData[keyof FormData],
   FieldKey extends KeyType = keyof FormData
 > {
+  /** 创建一个隐藏表单域 */
+  shadowInput?: boolean;
   /** 受控组件的唯一标示。 */
   field?: FieldKey;
   _key?: FieldKey;
