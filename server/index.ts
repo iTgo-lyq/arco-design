@@ -38,3 +38,4 @@ export { default as IconImport } from '../icon/react-handless-icon/IconImport';
 export { default as IconSwap } from '../icon/react-handless-icon/IconSwap';
 export { default as IconEmail } from '../icon/react-handless-icon/IconEmail';
 export { default as IconLink } from '../icon/react-handless-icon/IconLink';
+export { default as IconSave } from '../icon/react-handless-icon/IconSave';

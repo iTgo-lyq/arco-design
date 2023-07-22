@@ -50,3 +50,5 @@ export { default as Spin } from '../es/Spin';
 export { default as Avatar } from '../es/Avatar';
 export { default as Upload } from '../es/Upload';
 export { default as TextArea } from '../es/Input/textarea';
+export { default as Affix } from '../es/Affix';
+export { default as Tooltip } from '../es/Tooltip';
